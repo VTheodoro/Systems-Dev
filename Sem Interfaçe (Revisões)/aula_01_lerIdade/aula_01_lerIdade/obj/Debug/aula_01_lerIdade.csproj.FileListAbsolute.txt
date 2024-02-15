@@ -1,0 +1,6 @@
+C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_01_lerIdade\aula_01_lerIdade\bin\Debug\aula_01_lerIdade.exe.config
+C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_01_lerIdade\aula_01_lerIdade\bin\Debug\aula_01_lerIdade.exe
+C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_01_lerIdade\aula_01_lerIdade\bin\Debug\aula_01_lerIdade.pdb
+C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_01_lerIdade\aula_01_lerIdade\obj\Debug\aula_01_lerIdade.csprojResolveAssemblyReference.cache
+C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_01_lerIdade\aula_01_lerIdade\obj\Debug\aula_01_lerIdade.exe
+C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_01_lerIdade\aula_01_lerIdade\obj\Debug\aula_01_lerIdade.pdb

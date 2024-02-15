@@ -1,0 +1,6 @@
+C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_03_mediaPonderada\aula_03_mediaPonderada\bin\Debug\aula_03_mediaPonderada.exe.config
+C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_03_mediaPonderada\aula_03_mediaPonderada\bin\Debug\aula_03_mediaPonderada.exe
+C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_03_mediaPonderada\aula_03_mediaPonderada\bin\Debug\aula_03_mediaPonderada.pdb
+C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_03_mediaPonderada\aula_03_mediaPonderada\obj\Debug\aula_03_mediaPonderada.csprojResolveAssemblyReference.cache
+C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_03_mediaPonderada\aula_03_mediaPonderada\obj\Debug\aula_03_mediaPonderada.exe
+C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_03_mediaPonderada\aula_03_mediaPonderada\obj\Debug\aula_03_mediaPonderada.pdb
