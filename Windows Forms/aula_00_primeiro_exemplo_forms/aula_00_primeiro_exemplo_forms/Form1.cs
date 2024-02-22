@@ -16,5 +16,19 @@ namespace aula_00_primeiro_exemplo_forms
         {
             InitializeComponent();
         }
+
+        private void btn_botao1_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("Botão 1 Funcionando");
+
+        }
+
+        private void btn_outrobotao_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("Botão 2 Funcionando");
+
+        }
     }
 }

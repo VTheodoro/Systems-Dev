@@ -40,6 +40,7 @@
             this.btn_botao1.TabIndex = 0;
             this.btn_botao1.Text = "Clique Aqui";
             this.btn_botao1.UseVisualStyleBackColor = true;
+            this.btn_botao1.Click += new System.EventHandler(this.btn_botao1_Click);
             // 
             // btn_outrobotao
             // 
@@ -49,6 +50,7 @@
             this.btn_outrobotao.TabIndex = 1;
             this.btn_outrobotao.Text = "Outro Botão";
             this.btn_outrobotao.UseVisualStyleBackColor = true;
+            this.btn_outrobotao.Click += new System.EventHandler(this.btn_outrobotao_Click);
             // 
             // Form1
             // 
