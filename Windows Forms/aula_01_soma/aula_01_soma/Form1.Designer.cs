@@ -43,7 +43,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 60);
+            this.label1.Location = new System.Drawing.Point(27, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 1;
@@ -53,7 +53,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 99);
+            this.label2.Location = new System.Drawing.Point(27, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 13);
             this.label2.TabIndex = 2;
@@ -62,7 +62,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(183, 80);
+            this.label3.Location = new System.Drawing.Point(179, 64);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 3;
@@ -71,7 +71,7 @@
             // 
             // txt_numero1
             // 
-            this.txt_numero1.Location = new System.Drawing.Point(30, 76);
+            this.txt_numero1.Location = new System.Drawing.Point(30, 61);
             this.txt_numero1.Name = "txt_numero1";
             this.txt_numero1.Size = new System.Drawing.Size(100, 20);
             this.txt_numero1.TabIndex = 4;
@@ -79,7 +79,7 @@
             // 
             // txt_numero2
             // 
-            this.txt_numero2.Location = new System.Drawing.Point(30, 117);
+            this.txt_numero2.Location = new System.Drawing.Point(30, 102);
             this.txt_numero2.Name = "txt_numero2";
             this.txt_numero2.Size = new System.Drawing.Size(100, 20);
             this.txt_numero2.TabIndex = 5;
@@ -87,7 +87,7 @@
             // 
             // txt_resultado
             // 
-            this.txt_resultado.Location = new System.Drawing.Point(156, 96);
+            this.txt_resultado.Location = new System.Drawing.Point(156, 81);
             this.txt_resultado.Name = "txt_resultado";
             this.txt_resultado.ReadOnly = true;
             this.txt_resultado.Size = new System.Drawing.Size(100, 20);
@@ -96,7 +96,7 @@
             // btn_multiplicacao
             // 
             this.btn_multiplicacao.Image = global::aula_01_soma.Properties.Resources.multiplicationsign_80855;
-            this.btn_multiplicacao.Location = new System.Drawing.Point(211, 160);
+            this.btn_multiplicacao.Location = new System.Drawing.Point(211, 145);
             this.btn_multiplicacao.Name = "btn_multiplicacao";
             this.btn_multiplicacao.Size = new System.Drawing.Size(61, 60);
             this.btn_multiplicacao.TabIndex = 9;
@@ -106,7 +106,7 @@
             // btn_divisao
             // 
             this.btn_divisao.Image = global::aula_01_soma.Properties.Resources.divisionsign_81003;
-            this.btn_divisao.Location = new System.Drawing.Point(144, 160);
+            this.btn_divisao.Location = new System.Drawing.Point(144, 145);
             this.btn_divisao.Name = "btn_divisao";
             this.btn_divisao.Size = new System.Drawing.Size(61, 60);
             this.btn_divisao.TabIndex = 8;
@@ -116,7 +116,7 @@
             // btn_sub
             // 
             this.btn_sub.Image = global::aula_01_soma.Properties.Resources.ic_delete_97600;
-            this.btn_sub.Location = new System.Drawing.Point(77, 160);
+            this.btn_sub.Location = new System.Drawing.Point(77, 145);
             this.btn_sub.Name = "btn_sub";
             this.btn_sub.Size = new System.Drawing.Size(61, 60);
             this.btn_sub.TabIndex = 7;
@@ -126,7 +126,7 @@
             // btn_soma
             // 
             this.btn_soma.Image = global::aula_01_soma.Properties.Resources.create_new_add_plus_icon_219839;
-            this.btn_soma.Location = new System.Drawing.Point(12, 160);
+            this.btn_soma.Location = new System.Drawing.Point(12, 145);
             this.btn_soma.Name = "btn_soma";
             this.btn_soma.Size = new System.Drawing.Size(59, 60);
             this.btn_soma.TabIndex = 0;
