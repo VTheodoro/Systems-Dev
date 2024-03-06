@@ -1,0 +1,10 @@
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_05_media_ponderada\aula_05_media_ponderada\bin\Debug\aula_05_media_ponderada.exe.config
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_05_media_ponderada\aula_05_media_ponderada\bin\Debug\aula_05_media_ponderada.exe
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_05_media_ponderada\aula_05_media_ponderada\bin\Debug\aula_05_media_ponderada.pdb
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_05_media_ponderada\aula_05_media_ponderada\obj\Debug\aula_05_media_ponderada.csproj.AssemblyReference.cache
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_05_media_ponderada\aula_05_media_ponderada\obj\Debug\aula_05_media_ponderada.Form1.resources
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_05_media_ponderada\aula_05_media_ponderada\obj\Debug\aula_05_media_ponderada.Properties.Resources.resources
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_05_media_ponderada\aula_05_media_ponderada\obj\Debug\aula_05_media_ponderada.csproj.GenerateResource.cache
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_05_media_ponderada\aula_05_media_ponderada\obj\Debug\aula_05_media_ponderada.csproj.CoreCompileInputs.cache
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_05_media_ponderada\aula_05_media_ponderada\obj\Debug\aula_05_media_ponderada.exe
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_05_media_ponderada\aula_05_media_ponderada\obj\Debug\aula_05_media_ponderada.pdb
