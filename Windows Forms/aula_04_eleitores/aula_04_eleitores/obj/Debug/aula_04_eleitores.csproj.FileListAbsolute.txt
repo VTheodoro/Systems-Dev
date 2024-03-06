@@ -1,0 +1,11 @@
+C:\Users\ds-etim-2\Desktop\DS - Ramon\Windows Forms\aula_04_eleitores\aula_04_eleitores\bin\Debug\aula_04_eleitores.exe.config
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_04_eleitore(incompleto)\aula_04_eleitores\bin\Debug\aula_04_eleitores.exe.config
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_04_eleitore(incompleto)\aula_04_eleitores\bin\Debug\aula_04_eleitores.exe
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_04_eleitore(incompleto)\aula_04_eleitores\bin\Debug\aula_04_eleitores.pdb
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_04_eleitore(incompleto)\aula_04_eleitores\obj\Debug\aula_04_eleitores.csproj.AssemblyReference.cache
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_04_eleitore(incompleto)\aula_04_eleitores\obj\Debug\aula_04_eleitores.Form1.resources
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_04_eleitore(incompleto)\aula_04_eleitores\obj\Debug\aula_04_eleitores.Properties.Resources.resources
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_04_eleitore(incompleto)\aula_04_eleitores\obj\Debug\aula_04_eleitores.csproj.GenerateResource.cache
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_04_eleitore(incompleto)\aula_04_eleitores\obj\Debug\aula_04_eleitores.csproj.CoreCompileInputs.cache
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_04_eleitore(incompleto)\aula_04_eleitores\obj\Debug\aula_04_eleitores.exe
+C:\Users\victo\Desktop\Dev-Sistemas-2024\Windows Forms\aula_04_eleitore(incompleto)\aula_04_eleitores\obj\Debug\aula_04_eleitores.pdb
