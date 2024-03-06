@@ -1,2 +1,8 @@
-# Atividades-DS-2024
-Repositório com as minhas atividades da matéria de Desenvolvimento de Sistemas do ano de 2024 na ETEC de Registro - Curso de Desenvolvimento de Sistemas. Professor **[Ramon](https://github.com/ramtrigodev)**
+# Activities-DS-2024
+Repository with my activities in the Systems Development subject for the year 2024 at ETEC de Registro - Systems Development Course. Teacher **[Ramon Trigo](https://github.com/ramtrigodev)**
+
+<div align="left">  
+<h2>Technologies Used</h2>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" width="60"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" width="60"/>
+</div>
