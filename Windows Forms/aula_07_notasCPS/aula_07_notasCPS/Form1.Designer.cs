@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_nota1 = new System.Windows.Forms.TextBox();
-            this.txt_nota2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btn_res = new System.Windows.Forms.Button();
             this.txt_nota4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_nota3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.txt_nota2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_nota1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_res = new System.Windows.Forms.Button();
             this.txt_res = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -63,37 +63,16 @@
             this.groupBox1.Text = "Insira as  notas do aluno:";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label1
+            // btn_res
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nota 01:";
-            // 
-            // txt_nota1
-            // 
-            this.txt_nota1.Location = new System.Drawing.Point(5, 45);
-            this.txt_nota1.Name = "txt_nota1";
-            this.txt_nota1.Size = new System.Drawing.Size(100, 22);
-            this.txt_nota1.TabIndex = 1;
-            // 
-            // txt_nota2
-            // 
-            this.txt_nota2.Location = new System.Drawing.Point(121, 45);
-            this.txt_nota2.Name = "txt_nota2";
-            this.txt_nota2.Size = new System.Drawing.Size(100, 22);
-            this.txt_nota2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(118, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Nota 02:";
+            this.btn_res.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_res.Location = new System.Drawing.Point(72, 126);
+            this.btn_res.Name = "btn_res";
+            this.btn_res.Size = new System.Drawing.Size(75, 23);
+            this.btn_res.TabIndex = 8;
+            this.btn_res.Text = "Confirmar";
+            this.btn_res.UseVisualStyleBackColor = false;
+            this.btn_res.Click += new System.EventHandler(this.btn_res_Click);
             // 
             // txt_nota4
             // 
@@ -127,6 +106,38 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Nota 03:";
             // 
+            // txt_nota2
+            // 
+            this.txt_nota2.Location = new System.Drawing.Point(121, 45);
+            this.txt_nota2.Name = "txt_nota2";
+            this.txt_nota2.Size = new System.Drawing.Size(100, 22);
+            this.txt_nota2.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(118, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Nota 02:";
+            // 
+            // txt_nota1
+            // 
+            this.txt_nota1.Location = new System.Drawing.Point(5, 45);
+            this.txt_nota1.Name = "txt_nota1";
+            this.txt_nota1.Size = new System.Drawing.Size(100, 22);
+            this.txt_nota1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(2, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nota 01:";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -138,17 +149,6 @@
             this.label5.Text = "Menção Final do Aluno:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // btn_res
-            // 
-            this.btn_res.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_res.Location = new System.Drawing.Point(72, 126);
-            this.btn_res.Name = "btn_res";
-            this.btn_res.Size = new System.Drawing.Size(75, 23);
-            this.btn_res.TabIndex = 8;
-            this.btn_res.Text = "Confirmar";
-            this.btn_res.UseVisualStyleBackColor = false;
-            this.btn_res.Click += new System.EventHandler(this.btn_res_Click);
-            // 
             // txt_res
             // 
             this.txt_res.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -158,6 +158,7 @@
             this.txt_res.ReadOnly = true;
             this.txt_res.Size = new System.Drawing.Size(100, 26);
             this.txt_res.TabIndex = 2;
+            this.txt_res.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 

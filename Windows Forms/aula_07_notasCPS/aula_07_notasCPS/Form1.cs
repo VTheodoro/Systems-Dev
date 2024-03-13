@@ -38,17 +38,17 @@ namespace aula_07_notasCPS
 
             double media = (nota1 + nota2 + nota3 + nota4) / 4;
 
-            if (media <= 5)
+            if (media < 5)
             {
                 txt_res.Text = "I";
                 txt_res.ForeColor = Color.Red;
             }
-            else if (media > 5 && media <= 6)
+            else if (media >= 5 && media <= 7)
             {
                 txt_res.Text = "R";
                 txt_res.ForeColor = Color.Orange;
             }
-            else if(media >= 7 && media < 9)
+            else if(media > 7 && media < 9)
             {
                 txt_res.Text = "B";
                 txt_res.ForeColor = Color.Blue;
