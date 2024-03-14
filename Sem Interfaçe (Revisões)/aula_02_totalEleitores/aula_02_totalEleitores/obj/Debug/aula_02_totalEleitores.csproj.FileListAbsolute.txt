@@ -1,6 +1,0 @@
-C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_02_totalEleitores\aula_02_totalEleitores\bin\Debug\aula_02_totalEleitores.exe.config
-C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_02_totalEleitores\aula_02_totalEleitores\bin\Debug\aula_02_totalEleitores.exe
-C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_02_totalEleitores\aula_02_totalEleitores\bin\Debug\aula_02_totalEleitores.pdb
-C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_02_totalEleitores\aula_02_totalEleitores\obj\Debug\aula_02_totalEleitores.csprojResolveAssemblyReference.cache
-C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_02_totalEleitores\aula_02_totalEleitores\obj\Debug\aula_02_totalEleitores.exe
-C:\Users\ds-etim-2\Desktop\DS - Ramon\aula_02_totalEleitores\aula_02_totalEleitores\obj\Debug\aula_02_totalEleitores.pdb
