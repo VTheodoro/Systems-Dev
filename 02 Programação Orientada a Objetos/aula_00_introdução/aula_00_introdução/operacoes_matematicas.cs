@@ -10,10 +10,26 @@ namespace aula_00_introdução
     {
         //uma classe é composta de nome, atributos e metodos(ações).
         //metodos possuem visibilidade e tipo.
-        public int soma(int x, int y) //tipos de "variaveis" ou parametros
+        public int soma(int x, int y)
         {
             return (x + y);
         }
+
+        public int subitrair(int x, int y)
+        {
+            return (x - y);
+        }
+
+        public int dividir(int x, int y)
+        {
+            return (x / y);
+        }
+
+        public int multiplicar(int x, int y) 
+        {
+            return (x * y);
+        }
+
 
 
     }

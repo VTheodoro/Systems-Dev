@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_numero1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_numero2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.lbl_resultado = new System.Windows.Forms.Label();
+            this.btn_somar = new System.Windows.Forms.Button();
+            this.btn_subitrair = new System.Windows.Forms.Button();
+            this.btn_multi = new System.Windows.Forms.Button();
+            this.btn_dividir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txt_numero1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txt_numero1.Location = new System.Drawing.Point(12, 35);
+            this.txt_numero1.Name = "txt_numero1";
+            this.txt_numero1.Size = new System.Drawing.Size(100, 20);
+            this.txt_numero1.TabIndex = 0;
             // 
             // label1
             // 
@@ -65,12 +65,12 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Numero 2:";
             // 
-            // textBox2
+            // txt_numero2
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 84);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
+            this.txt_numero2.Location = new System.Drawing.Point(12, 84);
+            this.txt_numero2.Name = "txt_numero2";
+            this.txt_numero2.Size = new System.Drawing.Size(100, 20);
+            this.txt_numero2.TabIndex = 2;
             // 
             // label3
             // 
@@ -83,68 +83,71 @@
             this.label3.Text = "Resultado:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label4
+            // lbl_resultado
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(208, 65);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 16);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "-";
+            this.lbl_resultado.AutoSize = true;
+            this.lbl_resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_resultado.Location = new System.Drawing.Point(208, 65);
+            this.lbl_resultado.Name = "lbl_resultado";
+            this.lbl_resultado.Size = new System.Drawing.Size(13, 16);
+            this.lbl_resultado.TabIndex = 6;
+            this.lbl_resultado.Text = "-";
             // 
-            // button1
+            // btn_somar
             // 
-            this.button1.Location = new System.Drawing.Point(56, 123);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Somar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_somar.Location = new System.Drawing.Point(56, 123);
+            this.btn_somar.Name = "btn_somar";
+            this.btn_somar.Size = new System.Drawing.Size(75, 23);
+            this.btn_somar.TabIndex = 7;
+            this.btn_somar.Text = "Somar";
+            this.btn_somar.UseVisualStyleBackColor = true;
+            this.btn_somar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn_subitrair
             // 
-            this.button2.Location = new System.Drawing.Point(137, 123);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Subtrair";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_subitrair.Location = new System.Drawing.Point(137, 123);
+            this.btn_subitrair.Name = "btn_subitrair";
+            this.btn_subitrair.Size = new System.Drawing.Size(75, 23);
+            this.btn_subitrair.TabIndex = 8;
+            this.btn_subitrair.Text = "Subtrair";
+            this.btn_subitrair.UseVisualStyleBackColor = true;
+            this.btn_subitrair.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btn_multi
             // 
-            this.button3.Location = new System.Drawing.Point(137, 152);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Multiplicar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_multi.Location = new System.Drawing.Point(137, 152);
+            this.btn_multi.Name = "btn_multi";
+            this.btn_multi.Size = new System.Drawing.Size(75, 23);
+            this.btn_multi.TabIndex = 9;
+            this.btn_multi.Text = "Multiplicar";
+            this.btn_multi.UseVisualStyleBackColor = true;
+            this.btn_multi.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btn_dividir
             // 
-            this.button4.Location = new System.Drawing.Point(56, 152);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Dividir";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_dividir.Location = new System.Drawing.Point(56, 152);
+            this.btn_dividir.Name = "btn_dividir";
+            this.btn_dividir.Size = new System.Drawing.Size(75, 23);
+            this.btn_dividir.TabIndex = 10;
+            this.btn_dividir.Text = "Dividir";
+            this.btn_dividir.UseVisualStyleBackColor = true;
+            this.btn_dividir.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 225);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btn_dividir);
+            this.Controls.Add(this.btn_multi);
+            this.Controls.Add(this.btn_subitrair);
+            this.Controls.Add(this.btn_somar);
+            this.Controls.Add(this.lbl_resultado);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_numero2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_numero1);
             this.Name = "Form1";
             this.Text = "Introdução a POO";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -155,16 +158,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_numero1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_numero2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label lbl_resultado;
+        private System.Windows.Forms.Button btn_somar;
+        private System.Windows.Forms.Button btn_subitrair;
+        private System.Windows.Forms.Button btn_multi;
+        private System.Windows.Forms.Button btn_dividir;
     }
 }
 
