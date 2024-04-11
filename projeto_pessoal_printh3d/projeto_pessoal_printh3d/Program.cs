@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace teste_pessoal_printh
+namespace projeto_pessoal_printh3d
 {
     static class Program
     {

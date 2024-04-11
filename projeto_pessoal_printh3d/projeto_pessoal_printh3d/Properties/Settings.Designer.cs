@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace teste_pessoal_printh.Properties
+namespace projeto_pessoal_printh3d.Properties
 {
 
 
