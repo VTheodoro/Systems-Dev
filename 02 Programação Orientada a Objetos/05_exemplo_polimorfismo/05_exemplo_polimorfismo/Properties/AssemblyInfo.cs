@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("projeto_pessoal_printh3d")]
+[assembly: AssemblyTitle("05_exemplo_polimorfismo")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("projeto_pessoal_printh3d")]
+[assembly: AssemblyProduct("05_exemplo_polimorfismo")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f774bf5a-65b2-4054-9dd7-6c658945979a")]
+[assembly: Guid("20e62d3b-0397-4529-a2dd-2f1eaa34d51d")]
 
 // Version information for an assembly consists of the following four values:
 //

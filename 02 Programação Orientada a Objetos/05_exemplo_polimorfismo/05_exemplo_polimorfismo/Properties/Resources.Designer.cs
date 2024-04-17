@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace projeto_pessoal_printh3d.Properties
+namespace _05_exemplo_polimorfismo.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace projeto_pessoal_printh3d.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("projeto_pessoal_printh3d.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_05_exemplo_polimorfismo.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

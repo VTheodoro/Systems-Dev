@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace projeto_pessoal_printh3d
+namespace _05_exemplo_polimorfismo
 {
     static class Program
     {

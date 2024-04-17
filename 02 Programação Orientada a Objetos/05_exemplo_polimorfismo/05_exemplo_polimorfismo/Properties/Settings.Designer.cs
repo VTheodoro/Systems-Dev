@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace projeto_pessoal_printh3d.Properties
+namespace _05_exemplo_polimorfismo.Properties
 {
 
 
