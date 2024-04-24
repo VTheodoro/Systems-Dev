@@ -16,5 +16,22 @@ namespace _05_exemplo_polimorfismo
         {
             InitializeComponent();
         }
+
+        //não iremos terminar o instanciamento do objeto
+        empregado objeto = null;
+        private void btn_verificar_Click(object sender, EventArgs e)
+        {
+            if (rdb_assalariado.Checked)
+            {
+                objeto = new assalariado();
+                double t;
+                t = 0;
+                lbl_vencimento.Text = objeto.vencimento(t).ToString();
+            }
+
+
+
+
+        }
     }
 }
