@@ -1,0 +1,9 @@
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\04_exemplo_encapsulamento\04_exemplo_encapsulamento\bin\Debug\04_exemplo_encapsulamento.exe.config
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\04_exemplo_encapsulamento\04_exemplo_encapsulamento\bin\Debug\04_exemplo_encapsulamento.exe
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\04_exemplo_encapsulamento\04_exemplo_encapsulamento\bin\Debug\04_exemplo_encapsulamento.pdb
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\04_exemplo_encapsulamento\04_exemplo_encapsulamento\obj\Debug\04_exemplo_encapsulamento.csprojResolveAssemblyReference.cache
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\04_exemplo_encapsulamento\04_exemplo_encapsulamento\obj\Debug\_04_exemplo_encapsulamento.Form1.resources
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\04_exemplo_encapsulamento\04_exemplo_encapsulamento\obj\Debug\_04_exemplo_encapsulamento.Properties.Resources.resources
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\04_exemplo_encapsulamento\04_exemplo_encapsulamento\obj\Debug\04_exemplo_encapsulamento.csproj.GenerateResource.Cache
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\04_exemplo_encapsulamento\04_exemplo_encapsulamento\obj\Debug\04_exemplo_encapsulamento.exe
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\04_exemplo_encapsulamento\04_exemplo_encapsulamento\obj\Debug\04_exemplo_encapsulamento.pdb

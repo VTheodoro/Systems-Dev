@@ -1,0 +1,9 @@
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\teste_game\teste_game\bin\Debug\teste_game.exe.config
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\teste_game\teste_game\bin\Debug\teste_game.exe
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\teste_game\teste_game\bin\Debug\teste_game.pdb
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\teste_game\teste_game\obj\Debug\teste_game.csprojResolveAssemblyReference.cache
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\teste_game\teste_game\obj\Debug\teste_game.Form1.resources
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\teste_game\teste_game\obj\Debug\teste_game.Properties.Resources.resources
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\teste_game\teste_game\obj\Debug\teste_game.csproj.GenerateResource.Cache
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\teste_game\teste_game\obj\Debug\teste_game.exe
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\teste_game\teste_game\obj\Debug\teste_game.pdb

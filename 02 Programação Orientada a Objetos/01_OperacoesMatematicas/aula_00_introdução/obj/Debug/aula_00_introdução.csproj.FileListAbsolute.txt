@@ -1,0 +1,9 @@
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\aula_00_introdução\aula_00_introdução\bin\Debug\aula_00_introdução.exe.config
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\aula_00_introdução\aula_00_introdução\bin\Debug\aula_00_introdução.exe
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\aula_00_introdução\aula_00_introdução\bin\Debug\aula_00_introdução.pdb
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\aula_00_introdução\aula_00_introdução\obj\Debug\aula_00_introdução.csprojResolveAssemblyReference.cache
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\aula_00_introdução\aula_00_introdução\obj\Debug\aula_00_introdução.Form1.resources
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\aula_00_introdução\aula_00_introdução\obj\Debug\aula_00_introdução.Properties.Resources.resources
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\aula_00_introdução\aula_00_introdução\obj\Debug\aula_00_introdução.csproj.GenerateResource.Cache
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\aula_00_introdução\aula_00_introdução\obj\Debug\aula_00_introdução.exe
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\aula_00_introdução\aula_00_introdução\obj\Debug\aula_00_introdução.pdb

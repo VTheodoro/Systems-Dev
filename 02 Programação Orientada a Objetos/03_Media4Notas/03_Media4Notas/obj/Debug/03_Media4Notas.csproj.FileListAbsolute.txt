@@ -1,0 +1,9 @@
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\03_Media4Notas\03_Media4Notas\bin\Debug\03_Media4Notas.exe.config
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\03_Media4Notas\03_Media4Notas\bin\Debug\03_Media4Notas.exe
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\03_Media4Notas\03_Media4Notas\bin\Debug\03_Media4Notas.pdb
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\03_Media4Notas\03_Media4Notas\obj\Debug\03_Media4Notas.csprojResolveAssemblyReference.cache
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\03_Media4Notas\03_Media4Notas\obj\Debug\_03_Media4Notas.Form1.resources
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\03_Media4Notas\03_Media4Notas\obj\Debug\_03_Media4Notas.Properties.Resources.resources
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\03_Media4Notas\03_Media4Notas\obj\Debug\03_Media4Notas.csproj.GenerateResource.Cache
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\03_Media4Notas\03_Media4Notas\obj\Debug\03_Media4Notas.exe
+C:\Users\ds-etim-2\Desktop\Systems-Dev\02 Programação Orientada a Objetos\03_Media4Notas\03_Media4Notas\obj\Debug\03_Media4Notas.pdb
