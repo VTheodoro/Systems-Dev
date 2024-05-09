@@ -6,45 +6,47 @@ using System.Threading.Tasks;
 
 namespace _06_veículos
 {
-    class Veiculo //superclasse
-    {
 
-        private string modelo;
-        private string cor;
-        private int ano;
-
-        //modelo do veiculo
-        public void setModelo(string modelo)
+        class Veiculo //superclasse
         {
-            this.modelo = modelo;
-        }
+            private string modelo;
+            private string cor;
+            private string ano;
 
-        public string getModelo()
-        {
-            return this.modelo;
-        }
+            public void setModelo(string modelo)
+            {
+                this.modelo = modelo;
+            }
 
-        //cor do veiculo
-        public void setCor(string cor)
-        {
-            this.cor = cor;
-        }
+            public string getModelo()
+            {
+                return this.modelo;
+            }
 
-        public string getCor()
-        {
-            return this.cor;
-        }
+            public void setCor(string cor)
+            {
+                this.cor = cor;
+            }
 
-        //ano de fabricação
-        public void setAno(int ano)
-        {
-            this.ano = ano;
-        }
+            public string getCor()
+            {
+                return this.cor;
+            }
 
-        public int getAno()
-        {
-            return this.ano;
-        }
+            public void setAno(string ano)
+            {
+                this.ano = ano;
+            }
 
+            public string getAno()
+            {
+                return this.ano;
+            }
+
+            public virtual string getInfoAdicional()
+            {
+                return "";
+            }
+        }
     }
-}
+

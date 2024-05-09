@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 
 namespace _06_veículos
 {
-    class Caminhao
+    class Caminhao : Veiculo
     {
+        private string carga;
 
-        private int carga;
-
-        //capacidade de carga do caminhão
-        public void setCarga(int carga)
+        public void setCarga(string carga)
         {
             this.carga = carga;
         }
 
-        public int getCarga()
+        public string getCarga()
         {
             return this.carga;
         }
 
+        public override string getInfoAdicional()
+        {
+            return getCarga();
+        }
     }
+
 }
