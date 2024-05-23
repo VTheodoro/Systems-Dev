@@ -3,68 +3,87 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-//criação de blibliotecas para conexão com o MySql
+//Biblioteca de conexão do SQL
 using MySql.Data;
 using MySql.Data.MySqlClient;
-
 namespace _08_exemplo_crud
 {
     class conexao
     {
+        //Criação das variaveis
         public MySqlConnection conectar;
         public string servidor;
         public string database;
         public string usuario;
         public string senha;
-
+        //Construtor
         public conexao()
         {
             inicializar();
         }
+        //Inicializar conexão com a sql
         public void inicializar()
         {
             servidor = "127.0.0.1";
-            //local onde está o banco de dados no localhost.
-            //quando estiver online necessario saber o ip do servidor ou nome do servidor.
-
+            /*127.0.0.1 - número do servidor local ou seja o
+            proprio computador, para conexões online necessário
+            colocar o numero do servidor na internet.*/
             database = "crud_csharp";
-            //database do banco de dados que iremos utilizar
-
+            //Database que iremos criar futuramente
             usuario = "root";
             senha = "";
-            //usuario e senha padrões de acesso
-
+            /*usuário e senha são padrões (root e senha branco)
+            para conexões remota necessário substituir por usuario
+            e senha fornecido */
             string conexaostring;
-            conexaostring = "SEVER=" + servidor + ";" + "DATABASE=" + database + ";" + "UID=" + usuario + ";" + "PASSWORD=" + senha + ";";
-            //variavel conectar utilizada para localizar e acessar o banco de dados (local ou online)
+            conexaostring = "SERVER=" + servidor + ";" + "DATABASE= " +
+                database + ";" + "UID=" + usuario + ";" + "PASSWORD =" +
+                senha + ";";
             conectar = new MySqlConnection(conexaostring);
-
+            //MySqlConnection - utilizar a string conexaostring para 
+            //conectar ao banco de dados
         }
-
-        public bool abrirconexao() //try é um tratamento de erro
-        {                           //oque está dentro do try deve ser executado
-            try                     //oque está dentro do catch é a exessão do try
-            {                       //caso o try não execut ou não funcione, será direcionado para o catch
+        //Abertura do banco de dados
+        public bool abrirconexao()
+        {    //Try Catch é um tratamento de erro para códigos
+            try
+            {
                 conectar.Open();
                 return true;
             }
-            catch(MySqlException ex)
-            {
+            catch (MySqlException ex) //Catch - Caso o try não execute 
+            {                         //o catch entra em ação
                 switch (ex.Number)
                 {
                     case 0:
-                        System.Windows.Forms.MessageBox.Show("Não foi possivel conectar");
+                        System.Windows.Forms.MessageBox.Show("Não Foi possivel conectar.");
                         break;
                     case 1045:
-                        System.Windows.Forms.MessageBox.Show("Ususario e senha invalidos");
+                        System.Windows.Forms.MessageBox.Show("Usuário e senha invalidos!");
                         break;
                 }
                 return false;
             }
         }
-
-
-
+        public bool fecharconexao()
+        {
+            try
+            {
+                conectar.Close();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
     }
 }
+
+
+
+
+
+
+

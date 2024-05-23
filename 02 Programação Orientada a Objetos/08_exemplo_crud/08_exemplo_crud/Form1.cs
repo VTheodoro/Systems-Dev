@@ -16,5 +16,23 @@ namespace _08_exemplo_crud
         {
             InitializeComponent();
         }
+
+        colaborador c = new colaborador();
+        private void btn_salvar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                c.setNome(txt_nome.Text);
+                c.setSobrenome(txt_sobrenome.Text);
+                c.setCPF(txt_cpf.Text);
+                c.inserir();
+            }
+            finally
+            {
+                MessageBox.Show("Informações Gravadas Com Sucesso");
+            }
+
+
+        }
     }
 }
