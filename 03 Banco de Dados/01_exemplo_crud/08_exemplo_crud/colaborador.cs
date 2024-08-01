@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using MySql.Data;
+using System.Data;
 
 
 namespace _08_exemplo_crud
@@ -15,6 +16,7 @@ namespace _08_exemplo_crud
         private string nome;
         private string sobrenome;
         private string cpf;
+        private string codigo;
 
         public void setNome(string nome)
         {
@@ -46,6 +48,16 @@ namespace _08_exemplo_crud
             return this.cpf;
         }
 
+        public void setCodigo(string codigo)
+        {
+            this.codigo = codigo;
+        }
+
+        public string getCodigo()
+        {
+            return this.codigo;
+        }
+
 
         //método para inserir as informações
         public void inserir()
@@ -59,6 +71,35 @@ namespace _08_exemplo_crud
             }       
                 
          }
+
+        public void excluir()
+        {
+            string query = "delete from colaborador where codigo_colaborador ='" + getCodigo() + "'";
+            if (this.abrirconexao() == true)
+            {
+                MySqlCommand cmd = new MySqlCommand(query, conectar);
+                cmd.ExecuteNonQuery();
+                this.fecharconexao();
+            }
+        }
+
+
+        //Criar um método para consultar
+        //colocar biblioteca Using system.Data;
+        public DataTable Consultar()
+        {
+            this.abrirconexao();
+            string mSQL = "select * from colaborador";
+            MySqlCommand cmd = new MySqlCommand(mSQL, conectar);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            this.fecharconexao();
+            
+          //Retomar a consulta SQL em formato de tabela
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
 
 
 

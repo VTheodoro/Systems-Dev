@@ -32,7 +32,23 @@ namespace _08_exemplo_crud
                 MessageBox.Show("Informações Gravadas Com Sucesso");
             }
 
+        }
 
+        private void btn_consultar_Click(object sender, EventArgs e)
+        {
+
+            dataGridView1.DataSource = c.Consultar();
+
+
+
+        }
+
+        private void btn_excluir_Click(object sender, EventArgs e)
+        {
+
+            c.setCodigo(txt_codigo.Text);
+            c.excluir();
+            dataGridView1.DataSource = c.Consultar();
         }
     }
 }
