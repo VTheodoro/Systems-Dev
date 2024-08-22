@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _05_biblioteca_games
+namespace _000_Modelo_Projeto_Theodoro
 {
     public partial class frm_splash : Form
     {

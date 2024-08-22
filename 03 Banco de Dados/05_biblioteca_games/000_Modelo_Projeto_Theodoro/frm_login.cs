@@ -3,7 +3,7 @@ using System;
 using System.Drawing;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
-namespace _05_biblioteca_games
+namespace _000_Modelo_Projeto_Theodoro
 {
      //código feito totalmente por Victor Theodoro (VTheodoro no Github)
     public partial class frm_login : Form

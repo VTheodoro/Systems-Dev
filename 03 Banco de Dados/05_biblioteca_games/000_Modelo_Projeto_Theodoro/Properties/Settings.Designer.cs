@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _05_biblioteca_games.Properties
+namespace _000_Modelo_Projeto_Theodoro.Properties
 {
 
 

@@ -1,4 +1,4 @@
-﻿namespace _05_biblioteca_games
+﻿namespace _000_Modelo_Projeto_Theodoro
 {
     partial class frm_login
     {
