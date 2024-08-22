@@ -1,13 +1,17 @@
-﻿using System.Windows.Forms;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace _000_Modelo_Projeto_Theodoro
+namespace _00_projeto_modelo_theodoro
 {
-     //código feito totalmente por Victor Theodoro (VTheodoro no Github)
     public partial class frm_login : Form
-    {
+    { 
         private string nomeProjeto = "Projeto Exemplo Theodoro"; //<--- alterar nome do projeto conforme necessário :D
 
         //exemplo de informações de login padrões (alterar se necessário)
@@ -25,24 +29,8 @@ namespace _000_Modelo_Projeto_Theodoro
             txt_usuario.TextChanged += new EventHandler(txt_usuario_TextChanged);
         }
 
-        private void btn_acessar_Click(object sender, EventArgs e)
-        {
-            if (txt_usuario.Text == usuario && txt_senha.Text == senha)
-            {
-                frm_principal f = new frm_principal();
-                f.Show();
-                this.Hide();
-                txt_usuario.BackColor = System.Drawing.Color.LightGreen;
-                txt_senha.BackColor = System.Drawing.Color.LightGreen;
-            }
-            else
-            {
-                btn_acessar.BackColor = Color.DarkGray;
-                btn_acessar.Enabled = false; //desabilita o botão
-            }
-        }
 
-        private void btn_sair_Click(object sender, EventArgs e) //botão de sair do login
+        private void btn_sair_Click_1(object sender, EventArgs e) //botão de sair do login
         {
             if (MessageBox.Show("Deseja mesmo sair?", nomeProjeto, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
@@ -91,7 +79,7 @@ namespace _000_Modelo_Projeto_Theodoro
             {
                 verificacao = true;
                 btn_acessar.Cursor = Cursors.Hand;
-                btn_acessar.BackColor = Color.LightGreen; //altera a cor do botão se ambos estiverem corretos
+                btn_acessar.BackColor = Color.FromArgb(23, 154, 254); //altera a cor do botão se ambos estiverem corretos
                 btn_acessar.Enabled = true; //habilita o botão dnv
                 lbl_alerta.Text = ""; //limpa a mensagem de alerta
 
@@ -100,17 +88,16 @@ namespace _000_Modelo_Projeto_Theodoro
             {
                 verificacao = false;
                 btn_acessar.Cursor = Cursors.No;
-                btn_acessar.BackColor = Color.DarkGray; //volta a cor do botão pra cinza 
+                btn_acessar.BackColor = Color.FromArgb(1, 75, 131); //volta a cor do botão pra cinza 
                 btn_acessar.Enabled = false; //desabilita o botão dnv
             }
         }
 
-        private void btn_ajuda_Click(object sender, EventArgs e)
+        private void btn_ajuda_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("O LOGIN PADRÃO DOS CÓDIGOS DE VICTOR THEODORO É\n-\nUSUÁRIO: admin\nSENHA: 123", "Ajuda com o Login");
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void cb_mostrarSenha_CheckedChanged(object sender, EventArgs e)
         {
             if (cb_mostrarSenha.Checked)
             {
@@ -122,5 +109,27 @@ namespace _000_Modelo_Projeto_Theodoro
             }
         }
 
+        private void btn_acessar_Click_1(object sender, EventArgs e)
+        {
+            if (txt_usuario.Text == usuario && txt_senha.Text == senha)
+            {
+                frm_principal f = new frm_principal();
+                f.Show();
+                txt_usuario.BackColor = System.Drawing.Color.LightGreen;
+                txt_senha.BackColor = System.Drawing.Color.LightGreen;
+            }
+            else
+            {
+                btn_acessar.BackColor = Color.FromArgb(1, 75, 131);
+                btn_acessar.Enabled = false; //desabilita o botão
+            }
+        }
+
+        private void lbl_ajuda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("O LOGIN PADRÃO DOS CÓDIGOS DE VICTOR THEODORO É\n-\nUSUÁRIO: admin\nSENHA: 123", "Ajuda com o Login");
+        }
+
     }
+
 }

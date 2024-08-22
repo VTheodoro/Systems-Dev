@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _000_Modelo_Projeto_Theodoro.Properties
+namespace _00_projeto_modelo_theodoro.Properties
 {
 
 

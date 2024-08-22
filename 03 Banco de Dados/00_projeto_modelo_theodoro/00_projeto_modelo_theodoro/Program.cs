@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _000_Modelo_Projeto_Theodoro
+namespace _00_projeto_modelo_theodoro
 {
     static class Program
     {

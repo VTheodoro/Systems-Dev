@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _000_Modelo_Projeto_Theodoro
+namespace _00_projeto_modelo_theodoro
 {
     public partial class frm_splash : Form
     {
@@ -25,7 +25,7 @@ namespace _000_Modelo_Projeto_Theodoro
         private void timer1_Tick(object sender, EventArgs e)
         {
 
-            progressBar1.Increment(1);
+            progressBar1.Increment(1); //faz a barra de progresso carregar como uma demonstração
             if (progressBar1.Value == 100)
             {
                 timer1.Stop();

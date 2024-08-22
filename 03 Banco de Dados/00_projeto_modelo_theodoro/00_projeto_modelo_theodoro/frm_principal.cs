@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _000_Modelo_Projeto_Theodoro
+namespace _00_projeto_modelo_theodoro
 {
     public partial class frm_principal : Form
     {
