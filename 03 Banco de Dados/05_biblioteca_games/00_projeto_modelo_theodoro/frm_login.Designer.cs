@@ -1,4 +1,4 @@
-﻿namespace _00_projeto_modelo_theodoro
+﻿namespace _05_biblioteca_games
 {
     partial class frm_login
     {
@@ -142,7 +142,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::_00_projeto_modelo_theodoro.Properties.Resources.logo_vt_bg_none;
+            this.pictureBox1.BackgroundImage = global::_05_biblioteca_games.Properties.Resources.logo_vt_bg_none;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(228, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -185,6 +185,7 @@
             this.Name = "frm_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
+            this.Load += new System.EventHandler(this.frm_login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

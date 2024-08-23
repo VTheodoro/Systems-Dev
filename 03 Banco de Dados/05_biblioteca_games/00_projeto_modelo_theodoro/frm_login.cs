@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _00_projeto_modelo_theodoro
+namespace _05_biblioteca_games
 {
     public partial class frm_login : Form
     { 
@@ -127,6 +127,11 @@ namespace _00_projeto_modelo_theodoro
         }
 
         private void lbl_alerta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frm_login_Load(object sender, EventArgs e)
         {
 
         }

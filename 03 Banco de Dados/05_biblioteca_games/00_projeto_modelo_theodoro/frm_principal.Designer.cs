@@ -1,4 +1,4 @@
-﻿namespace _00_projeto_modelo_theodoro
+﻿namespace _05_biblioteca_games
 {
     partial class frm_principal
     {
@@ -74,7 +74,7 @@
             // exemploToolStripMenuItem
             // 
             this.exemploToolStripMenuItem.Name = "exemploToolStripMenuItem";
-            this.exemploToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.exemploToolStripMenuItem.Size = new System.Drawing.Size(65, 19);
             this.exemploToolStripMenuItem.Text = "Exemplo";
             // 
             // label1
@@ -103,6 +103,7 @@
             this.Name = "frm_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
+            this.Load += new System.EventHandler(this.frm_principal_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
