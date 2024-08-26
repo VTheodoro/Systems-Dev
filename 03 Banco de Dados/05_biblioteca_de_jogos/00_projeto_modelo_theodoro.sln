@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_biblioteca_games", "00_projeto_modelo_theodoro\05_biblioteca_games.csproj", "{6AAFFF16-8B05-4F5C-9015-B3D2B69F8B98}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00_projeto_modelo_theodoro", "00_projeto_modelo_theodoro\00_projeto_modelo_theodoro.csproj", "{6AAFFF16-8B05-4F5C-9015-B3D2B69F8B98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="conexao.cs" />
+    <Compile Include="frm_crud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_crud.Designer.cs">
+      <DependentUpon>frm_crud.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,8 +71,12 @@
     <Compile Include="frm_login.Designer.cs">
       <DependentUpon>frm_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="jogo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_crud.resx">
+      <DependentUpon>frm_crud.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
     </EmbeddedResource>

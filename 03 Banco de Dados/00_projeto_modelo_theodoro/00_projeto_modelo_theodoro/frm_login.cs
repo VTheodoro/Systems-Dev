@@ -49,8 +49,6 @@ namespace _00_projeto_modelo_theodoro
             else
             {
                 txt_usuario.BackColor = System.Drawing.Color.LightCoral;
-                lbl_alerta.Text = "USUÁRIO INVÁLIDO!";
-                lbl_alerta.ForeColor = System.Drawing.Color.Red;
             }
             VerificarCampos();
         }
@@ -64,9 +62,6 @@ namespace _00_projeto_modelo_theodoro
             else
             {
                 txt_senha.BackColor = System.Drawing.Color.LightCoral;
-                lbl_alerta.Text = "SENHA INVÁLIDA!";
-                lbl_alerta.ForeColor = System.Drawing.Color.Red;
-
             }
             VerificarCampos();
         }
@@ -81,8 +76,6 @@ namespace _00_projeto_modelo_theodoro
                 btn_acessar.Cursor = Cursors.Hand;
                 btn_acessar.BackColor = Color.FromArgb(23, 154, 254); //altera a cor do botão se ambos estiverem corretos
                 btn_acessar.Enabled = true; //habilita o botão dnv
-                lbl_alerta.Text = ""; //limpa a mensagem de alerta
-
             }
             else
             {
@@ -126,10 +119,6 @@ namespace _00_projeto_modelo_theodoro
             MessageBox.Show("O LOGIN PADRÃO DOS CÓDIGOS DE VICTOR THEODORO É\n-\nUSUÁRIO: admin\nSENHA: 123", "Ajuda com o Login");
         }
 
-        private void lbl_alerta_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 
 }

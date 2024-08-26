@@ -37,7 +37,6 @@
             this.lbl_ajuda = new System.Windows.Forms.Label();
             this.btn_sair = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbl_alerta = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,16 +149,6 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // lbl_alerta
-            // 
-            this.lbl_alerta.AutoSize = true;
-            this.lbl_alerta.Location = new System.Drawing.Point(314, 308);
-            this.lbl_alerta.Name = "lbl_alerta";
-            this.lbl_alerta.Size = new System.Drawing.Size(14, 20);
-            this.lbl_alerta.TabIndex = 10;
-            this.lbl_alerta.Text = ".";
-            this.lbl_alerta.Click += new System.EventHandler(this.lbl_alerta_Click);
-            // 
             // frm_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -167,7 +156,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(666, 384);
             this.ControlBox = false;
-            this.Controls.Add(this.lbl_alerta);
             this.Controls.Add(this.lbl_ajuda);
             this.Controls.Add(this.cb_mostrarSenha);
             this.Controls.Add(this.btn_sair);
@@ -202,6 +190,5 @@
         private System.Windows.Forms.CheckBox cb_mostrarSenha;
         private System.Windows.Forms.Label lbl_ajuda;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lbl_alerta;
     }
 }

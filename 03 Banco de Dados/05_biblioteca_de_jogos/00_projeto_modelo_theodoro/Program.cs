@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _05_biblioteca_games
+namespace _00_projeto_modelo_theodoro
 {
     static class Program
     {

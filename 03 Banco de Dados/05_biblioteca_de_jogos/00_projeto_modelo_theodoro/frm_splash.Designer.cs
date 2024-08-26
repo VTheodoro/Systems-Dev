@@ -1,4 +1,4 @@
-﻿namespace _05_biblioteca_games
+﻿namespace _00_projeto_modelo_theodoro
 {
     partial class frm_splash
     {
@@ -51,9 +51,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::_05_biblioteca_games.Properties.Resources.logo_vt_bg_none;
+            this.pictureBox1.BackgroundImage = global::_00_projeto_modelo_theodoro.Properties.Resources.logo_vt_bg_none;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(36, -24);
+            this.pictureBox1.Location = new System.Drawing.Point(36, -11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(344, 234);
             this.pictureBox1.TabIndex = 10;
