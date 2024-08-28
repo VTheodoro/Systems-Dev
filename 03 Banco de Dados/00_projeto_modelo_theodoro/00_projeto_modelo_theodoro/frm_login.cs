@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _00_projeto_modelo_theodoro
 {
     public partial class frm_login : Form
-    { 
+    {
         private string nomeProjeto = "Projeto Exemplo Theodoro"; //<--- alterar nome do projeto conforme necessário :D
 
         //exemplo de informações de login padrões (alterar se necessário)
@@ -20,15 +14,24 @@ namespace _00_projeto_modelo_theodoro
 
         private bool verificacao = false; //verificação do login
 
+        //variáveis para o temporizador
+        private Timer blinkTimer;
+        private bool isColorToggle;
+        private DateTime startTime;
+
         public frm_login()
         {
             InitializeComponent();
+
+            //inicialize o temporizador
+            blinkTimer = new Timer();
+            blinkTimer.Interval = 200; //intervalo de 200 milissegundos
+            blinkTimer.Tick += BlinkTimer_Tick;
 
             //verificação em tempo real das informações digitadas nos txts
             txt_senha.TextChanged += new EventHandler(txt_senha_TextChanged);
             txt_usuario.TextChanged += new EventHandler(txt_usuario_TextChanged);
         }
-
 
         private void btn_sair_Click_1(object sender, EventArgs e) //botão de sair do login
         {
@@ -38,13 +41,16 @@ namespace _00_projeto_modelo_theodoro
             }
         }
 
-
         //métodos que verificam a mudança de texto do usuário e da senha --->
         private void txt_usuario_TextChanged(object sender, EventArgs e)
         {
             if (txt_usuario.Text == usuario)
             {
                 txt_usuario.BackColor = System.Drawing.Color.LightGreen;
+            }
+            else if (txt_usuario.Text == "")
+            {
+                txt_usuario.BackColor = System.Drawing.Color.FromArgb(49, 52, 59);
             }
             else
             {
@@ -59,13 +65,16 @@ namespace _00_projeto_modelo_theodoro
             {
                 txt_senha.BackColor = System.Drawing.Color.LightGreen;
             }
+            else if (txt_senha.Text == "")
+            {
+                txt_senha.BackColor = System.Drawing.Color.FromArgb(49, 52, 59);
+            }
             else
             {
                 txt_senha.BackColor = System.Drawing.Color.LightCoral;
             }
             VerificarCampos();
         }
-
 
         //método para verificar o login --->
         private void VerificarCampos()
@@ -74,15 +83,42 @@ namespace _00_projeto_modelo_theodoro
             {
                 verificacao = true;
                 btn_acessar.Cursor = Cursors.Hand;
-                btn_acessar.BackColor = Color.FromArgb(23, 154, 254); //altera a cor do botão se ambos estiverem corretos
-                btn_acessar.Enabled = true; //habilita o botão dnv
+                btn_acessar.Enabled = false; //inicialmente desabilita o botão
+
+                //inicia o piscar
+                isColorToggle = false;
+                startTime = DateTime.Now;
+                blinkTimer.Start();
             }
             else
             {
                 verificacao = false;
                 btn_acessar.Cursor = Cursors.No;
-                btn_acessar.BackColor = Color.FromArgb(1, 75, 131); //volta a cor do botão pra cinza 
-                btn_acessar.Enabled = false; //desabilita o botão dnv
+                btn_acessar.BackColor = Color.FromArgb(1, 75, 131); // Cor desativada
+                btn_acessar.Enabled = false; // Desabilita o botão
+            }
+        }
+
+        private void BlinkTimer_Tick(object sender, EventArgs e)
+        {
+            //alterna entre as cores
+            if (isColorToggle)
+            {
+                btn_acessar.BackColor = Color.FromArgb(1, 75, 131); //cor desativada
+            }
+            else
+            {
+                btn_acessar.BackColor = Color.FromArgb(23, 154, 254); //cor ativada
+            }
+
+            isColorToggle = !isColorToggle; //alterna o estado
+
+            //para o temporizador após um curto período (1 segundo)
+            if (DateTime.Now.Subtract(startTime).TotalMilliseconds >= 1000)
+            {
+                blinkTimer.Stop();
+                btn_acessar.BackColor = Color.FromArgb(23, 154, 254); //cor final (ativada)
+                btn_acessar.Enabled = true; //habilita o botão
             }
         }
 
@@ -110,7 +146,7 @@ namespace _00_projeto_modelo_theodoro
             else
             {
                 btn_acessar.BackColor = Color.FromArgb(1, 75, 131);
-                btn_acessar.Enabled = false; //desabilita o botão
+                btn_acessar.Enabled = false; // Desabilita o botão
             }
         }
 
@@ -118,7 +154,5 @@ namespace _00_projeto_modelo_theodoro
         {
             MessageBox.Show("O LOGIN PADRÃO DOS CÓDIGOS DE VICTOR THEODORO É\n-\nUSUÁRIO: admin\nSENHA: 123", "Ajuda com o Login");
         }
-
     }
-
 }
