@@ -146,7 +146,7 @@ namespace _00_projeto_modelo_theodoro
             else
             {
                 btn_acessar.BackColor = Color.FromArgb(1, 75, 131);
-                btn_acessar.Enabled = false; // Desabilita o botão
+                btn_acessar.Enabled = false; //desabilita o botão
             }
         }
 
