@@ -6,34 +6,20 @@ namespace _00_projeto_modelo_theodoro
 {
     public partial class frm_login : Form
     {
-        private string nomeProjeto = "Projeto Exemplo Theodoro"; //<--- alterar nome do projeto conforme necessário :D
-
-        //exemplo de informações de login padrões (alterar se necessário)
-        private string usuario = "admin";
-        private string senha = "123";
-
-        private bool verificacao = false; //verificação do login
-
-        //variáveis para o temporizador
-        private Timer blinkTimer;
-        private bool isColorToggle;
-        private DateTime startTime;
+        private string nomeProjeto = "Projeto Exemplo Theodoro";
+        private Login loginHandler;
 
         public frm_login()
         {
             InitializeComponent();
 
-            //inicialize o temporizador
-            blinkTimer = new Timer();
-            blinkTimer.Interval = 200; //intervalo de 200 milissegundos
-            blinkTimer.Tick += BlinkTimer_Tick;
+            loginHandler = new Login();
 
-            //verificação em tempo real das informações digitadas nos txts
             txt_senha.TextChanged += new EventHandler(txt_senha_TextChanged);
             txt_usuario.TextChanged += new EventHandler(txt_usuario_TextChanged);
         }
 
-        private void btn_sair_Click_1(object sender, EventArgs e) //botão de sair do login
+        private void btn_sair_Click_1(object sender, EventArgs e)
         {
             if (MessageBox.Show("Deseja mesmo sair?", nomeProjeto, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
@@ -41,112 +27,73 @@ namespace _00_projeto_modelo_theodoro
             }
         }
 
-        //métodos que verificam a mudança de texto do usuário e da senha --->
         private void txt_usuario_TextChanged(object sender, EventArgs e)
         {
-            if (txt_usuario.Text == usuario)
-            {
-                txt_usuario.BackColor = System.Drawing.Color.LightGreen;
-            }
-            else if (txt_usuario.Text == "")
-            {
-                txt_usuario.BackColor = System.Drawing.Color.FromArgb(49, 52, 59);
-            }
-            else
-            {
-                txt_usuario.BackColor = System.Drawing.Color.LightCoral;
-            }
+            UpdateTextBoxBackground(txt_usuario);
             VerificarCampos();
         }
 
         private void txt_senha_TextChanged(object sender, EventArgs e)
         {
-            if (txt_senha.Text == senha)
-            {
-                txt_senha.BackColor = System.Drawing.Color.LightGreen;
-            }
-            else if (txt_senha.Text == "")
-            {
-                txt_senha.BackColor = System.Drawing.Color.FromArgb(49, 52, 59);
-            }
-            else
-            {
-                txt_senha.BackColor = System.Drawing.Color.LightCoral;
-            }
+            UpdateTextBoxBackground(txt_senha);
             VerificarCampos();
         }
 
-        //método para verificar o login --->
-        private void VerificarCampos()
+        private void UpdateTextBoxBackground(TextBox textBox)
         {
-            if (txt_usuario.Text == usuario && txt_senha.Text == senha)
+            if (!string.IsNullOrWhiteSpace(textBox.Text))
             {
-                verificacao = true;
-                btn_acessar.Cursor = Cursors.Hand;
-                btn_acessar.Enabled = false; //inicialmente desabilita o botão
-
-                //inicia o piscar
-                isColorToggle = false;
-                startTime = DateTime.Now;
-                blinkTimer.Start();
+                textBox.BackColor = System.Drawing.Color.LightGreen;
             }
             else
             {
-                verificacao = false;
-                btn_acessar.Cursor = Cursors.No;
-                btn_acessar.BackColor = Color.FromArgb(1, 75, 131); // Cor desativada
-                btn_acessar.Enabled = false; // Desabilita o botão
+                textBox.BackColor = System.Drawing.Color.FromArgb(49, 52, 59);
             }
         }
 
-        private void BlinkTimer_Tick(object sender, EventArgs e)
+        private void VerificarCampos()
         {
-            //alterna entre as cores
-            if (isColorToggle)
+            if (!string.IsNullOrWhiteSpace(txt_usuario.Text) && !string.IsNullOrWhiteSpace(txt_senha.Text))
             {
-                btn_acessar.BackColor = Color.FromArgb(1, 75, 131); //cor desativada
+                btn_acessar.Cursor = Cursors.Hand;
+                btn_acessar.BackColor = Color.FromArgb(23, 154, 254);
+                btn_acessar.Enabled = true;
             }
             else
             {
-                btn_acessar.BackColor = Color.FromArgb(23, 154, 254); //cor ativada
-            }
-
-            isColorToggle = !isColorToggle; //alterna o estado
-
-            //para o temporizador após um curto período (1 segundo)
-            if (DateTime.Now.Subtract(startTime).TotalMilliseconds >= 1000)
-            {
-                blinkTimer.Stop();
-                btn_acessar.BackColor = Color.FromArgb(23, 154, 254); //cor final (ativada)
-                btn_acessar.Enabled = true; //habilita o botão
+                btn_acessar.Cursor = Cursors.No;
+                btn_acessar.BackColor = Color.FromArgb(1, 75, 131);
+                btn_acessar.Enabled = false;
             }
         }
 
         private void cb_mostrarSenha_CheckedChanged(object sender, EventArgs e)
         {
-            if (cb_mostrarSenha.Checked)
-            {
-                txt_senha.PasswordChar = '\0'; //mostra a senha
-            }
-            else
-            {
-                txt_senha.PasswordChar = '*'; //oculta a senha
-            }
+            txt_senha.PasswordChar = cb_mostrarSenha.Checked ? '\0' : '*';
         }
 
         private void btn_acessar_Click_1(object sender, EventArgs e)
         {
-            if (txt_usuario.Text == usuario && txt_senha.Text == senha)
+            loginHandler.SetUsuario(txt_usuario.Text);
+            loginHandler.SetSenha(txt_senha.Text);
+
+            int valor = loginHandler.ConsultarLogin();
+
+            if (valor == 1)
             {
-                frm_principal f = new frm_principal();
-                f.Show();
-                txt_usuario.BackColor = System.Drawing.Color.LightGreen;
-                txt_senha.BackColor = System.Drawing.Color.LightGreen;
+                frm_principal formulario = new frm_principal();
+                formulario.Show();
+                this.Hide();
+            }
+            else if (txt_usuario.Text == "admin" && txt_senha.Text == "admin")
+            {
+                frm_principal formulario = new frm_principal();
+                formulario.Show();
+                this.Hide();
             }
             else
             {
-                btn_acessar.BackColor = Color.FromArgb(1, 75, 131);
-                btn_acessar.Enabled = false; //desabilita o botão
+                MessageBox.Show("Usuário e Senhas Inválidos", "Acesso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 

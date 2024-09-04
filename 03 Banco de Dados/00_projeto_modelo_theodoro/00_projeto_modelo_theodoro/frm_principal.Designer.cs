@@ -74,7 +74,7 @@
             // exemploToolStripMenuItem
             // 
             this.exemploToolStripMenuItem.Name = "exemploToolStripMenuItem";
-            this.exemploToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.exemploToolStripMenuItem.Size = new System.Drawing.Size(65, 19);
             this.exemploToolStripMenuItem.Text = "Exemplo";
             // 
             // label1
@@ -93,12 +93,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(628, 407);
-            this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(152)))), ((int)(((byte)(153)))));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
