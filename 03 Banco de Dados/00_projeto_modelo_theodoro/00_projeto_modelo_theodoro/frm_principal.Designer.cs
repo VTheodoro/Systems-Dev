@@ -34,6 +34,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.exemploToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.exemplo2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exemplo3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -42,7 +46,9 @@
             // 
             this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton3});
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.toolStrip1.Location = new System.Drawing.Point(0, 23);
             this.toolStrip1.Name = "toolStrip1";
@@ -62,8 +68,11 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exemploToolStripMenuItem});
+            this.exemploToolStripMenuItem,
+            this.exemplo2ToolStripMenuItem,
+            this.exemplo3ToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -73,6 +82,7 @@
             // 
             // exemploToolStripMenuItem
             // 
+            this.exemploToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
             this.exemploToolStripMenuItem.Name = "exemploToolStripMenuItem";
             this.exemploToolStripMenuItem.Size = new System.Drawing.Size(65, 19);
             this.exemploToolStripMenuItem.Text = "Exemplo";
@@ -86,6 +96,38 @@
             this.label1.Size = new System.Drawing.Size(155, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "Sem Conteúdo.";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 20);
+            this.toolStripButton2.Text = "toolStripButton2";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 20);
+            this.toolStripButton3.Text = "toolStripButton3";
+            // 
+            // exemplo2ToolStripMenuItem
+            // 
+            this.exemplo2ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exemplo2ToolStripMenuItem.Name = "exemplo2ToolStripMenuItem";
+            this.exemplo2ToolStripMenuItem.Size = new System.Drawing.Size(74, 19);
+            this.exemplo2ToolStripMenuItem.Text = "Exemplo 2";
+            // 
+            // exemplo3ToolStripMenuItem
+            // 
+            this.exemplo3ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.exemplo3ToolStripMenuItem.Name = "exemplo3ToolStripMenuItem";
+            this.exemplo3ToolStripMenuItem.Size = new System.Drawing.Size(74, 19);
+            this.exemplo3ToolStripMenuItem.Text = "Exemplo 3";
             // 
             // frm_principal
             // 
@@ -118,5 +160,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem exemploToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripMenuItem exemplo2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exemplo3ToolStripMenuItem;
     }
 }

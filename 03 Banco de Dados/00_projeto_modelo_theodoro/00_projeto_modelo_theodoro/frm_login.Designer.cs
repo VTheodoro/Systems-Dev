@@ -44,6 +44,7 @@
             // 
             this.txt_usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(59)))));
             this.txt_usuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_usuario.ForeColor = System.Drawing.SystemColors.Window;
             this.txt_usuario.Location = new System.Drawing.Point(73, 116);
             this.txt_usuario.Margin = new System.Windows.Forms.Padding(5);
             this.txt_usuario.Name = "txt_usuario";
@@ -75,6 +76,7 @@
             // 
             this.txt_senha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(52)))), ((int)(((byte)(59)))));
             this.txt_senha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_senha.ForeColor = System.Drawing.SystemColors.Window;
             this.txt_senha.Location = new System.Drawing.Point(73, 183);
             this.txt_senha.Margin = new System.Windows.Forms.Padding(5);
             this.txt_senha.Name = "txt_senha";

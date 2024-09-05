@@ -26,7 +26,7 @@ namespace _00_projeto_modelo_theodoro
 
         public int ConsultarLogin()
         {
-            int valorLogin = 0;
+            int valor_login = 0;    
 
             try
             {
@@ -36,23 +36,24 @@ namespace _00_projeto_modelo_theodoro
 
                     using (MySqlCommand cmd = new MySqlCommand(mSQL, dbConexao.conectar))
                     {
-                        cmd.Parameters.AddWithValue("@usuario", usuario);
-                        cmd.Parameters.AddWithValue("@senha", senha);
+                        cmd.Parameters.AddWithValue("@usuario", this.usuario);
+                        cmd.Parameters.AddWithValue("@senha", this.senha);
 
-                        valorLogin = Convert.ToInt32(cmd.ExecuteScalar());
+                        valor_login = Convert.ToInt32(cmd.ExecuteScalar());
                     }
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: " + ex.Message);
+                Console.WriteLine("Erro: " + ex.Message);
             }
             finally
             {
                 dbConexao.fecharconexao();
             }
+            
 
-            return valorLogin;
+            return valor_login;
         }
     }
 }
